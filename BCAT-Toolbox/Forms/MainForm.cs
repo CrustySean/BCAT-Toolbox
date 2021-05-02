@@ -463,16 +463,16 @@ namespace BcatToolbox
             if (upd != Version)
             {
                 Process.Start("https://github.com/CrustySean/BCAT-Toolbox/releases");
-
-                /* Delete the downloaded file. */
-                if (File.Exists(BTexe))
-                {
-                    File.Delete(BTexe);
-                }
             }
             else
             {
                 MessageBox.Show("BCAT-Toolbox is up to date", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            /* Delete the downloaded file. */
+            if (File.Exists(c_out))
+            {
+                File.Delete(c_out);
             }
         }
 
