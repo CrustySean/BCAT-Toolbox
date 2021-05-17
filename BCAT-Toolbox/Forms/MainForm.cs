@@ -737,7 +737,7 @@ namespace BcatToolbox
             }
         }
 
-        private void clearLogsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clearLogsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             string p = Utils.output + Path.DirectorySeparatorChar + "log.txt";
 
@@ -747,10 +747,17 @@ namespace BcatToolbox
                 File.Delete(p);
                 MessageBox.Show("Successfully cleared the log file", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            } else
+            }
+            else
             {
                 MessageBox.Show("There isn't any lof file to clear!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void viewLogsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form fm = new Logs();
+            fm.Show();
         }
     }
 }

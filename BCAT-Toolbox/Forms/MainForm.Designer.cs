@@ -35,7 +35,6 @@
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bugyoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearLogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msgpackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unpackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.multiSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,6 +64,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox_topicIcon = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.logsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearLogsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewLogsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -79,6 +81,7 @@
             this.fileToolStripMenuItem,
             this.msgpackToolStripMenuItem,
             this.bCATContainerToolStripMenuItem,
+            this.logsToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -91,8 +94,7 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.testToolStripMenuItem,
             this.updateToolStripMenuItem,
-            this.bugyoToolStripMenuItem,
-            this.clearLogsToolStripMenuItem});
+            this.bugyoToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -100,30 +102,23 @@
             // testToolStripMenuItem
             // 
             this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            this.testToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.testToolStripMenuItem.Text = "Open News";
             this.testToolStripMenuItem.Click += new System.EventHandler(this.testToolStripMenuItem_Click);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updateToolStripMenuItem.Text = "Update";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // bugyoToolStripMenuItem
             // 
             this.bugyoToolStripMenuItem.Name = "bugyoToolStripMenuItem";
-            this.bugyoToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.bugyoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bugyoToolStripMenuItem.Text = "Bugyo";
             this.bugyoToolStripMenuItem.Click += new System.EventHandler(this.bugyoToolStripMenuItem_Click);
-            // 
-            // clearLogsToolStripMenuItem
-            // 
-            this.clearLogsToolStripMenuItem.Name = "clearLogsToolStripMenuItem";
-            this.clearLogsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.clearLogsToolStripMenuItem.Text = "Clear Logs";
-            this.clearLogsToolStripMenuItem.Click += new System.EventHandler(this.clearLogsToolStripMenuItem_Click);
             // 
             // msgpackToolStripMenuItem
             // 
@@ -223,7 +218,7 @@
             this.bCATToolStripMenuItem,
             this.prepoToolStripMenuItem});
             this.informationsToolStripMenuItem.Name = "informationsToolStripMenuItem";
-            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.informationsToolStripMenuItem.Text = "Informations";
             // 
             // titleIDToolStripMenuItem
@@ -257,7 +252,7 @@
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
             this.aboutToolStripMenuItem1.Text = "About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
@@ -295,6 +290,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.pictureBox2.Location = new System.Drawing.Point(304, 82);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(279, 225);
@@ -306,6 +302,7 @@
             // richTextBox2
             // 
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.richTextBox2.Location = new System.Drawing.Point(67, 18);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
@@ -316,6 +313,7 @@
             // richTextBox1
             // 
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.richTextBox1.Location = new System.Drawing.Point(598, 18);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
@@ -326,6 +324,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.pictureBox1.Location = new System.Drawing.Point(12, 82);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(279, 225);
@@ -336,6 +335,7 @@
             // 
             // pictureBox_topicIcon
             // 
+            this.pictureBox_topicIcon.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.pictureBox_topicIcon.Location = new System.Drawing.Point(12, 18);
             this.pictureBox_topicIcon.Name = "pictureBox_topicIcon";
             this.pictureBox_topicIcon.Size = new System.Drawing.Size(49, 49);
@@ -352,6 +352,29 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(957, 428);
             this.tabControl1.TabIndex = 1;
+            // 
+            // logsToolStripMenuItem
+            // 
+            this.logsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clearLogsToolStripMenuItem1,
+            this.viewLogsToolStripMenuItem1});
+            this.logsToolStripMenuItem.Name = "logsToolStripMenuItem";
+            this.logsToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.logsToolStripMenuItem.Text = "Logs";
+            // 
+            // clearLogsToolStripMenuItem1
+            // 
+            this.clearLogsToolStripMenuItem1.Name = "clearLogsToolStripMenuItem1";
+            this.clearLogsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.clearLogsToolStripMenuItem1.Text = "Clear Logs";
+            this.clearLogsToolStripMenuItem1.Click += new System.EventHandler(this.clearLogsToolStripMenuItem1_Click);
+            // 
+            // viewLogsToolStripMenuItem1
+            // 
+            this.viewLogsToolStripMenuItem1.Name = "viewLogsToolStripMenuItem1";
+            this.viewLogsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.viewLogsToolStripMenuItem1.Text = "View Logs";
+            this.viewLogsToolStripMenuItem1.Click += new System.EventHandler(this.viewLogsToolStripMenuItem1_Click);
             // 
             // Main
             // 
@@ -414,7 +437,9 @@
         private System.Windows.Forms.ToolStripMenuItem bugyoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem multiSelectionToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem normalSelectionToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem clearLogsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearLogsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem viewLogsToolStripMenuItem1;
     }
 }
 

@@ -156,6 +156,12 @@
     <Compile Include="BCAT\News\TopicInformation.cs" />
     <Compile Include="BCAT\News\Version.cs" />
     <Compile Include="BCAT\News\Topic.cs" />
+    <Compile Include="Forms\LogsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LogsForm.Designer.cs">
+      <DependentUpon>LogsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logger.cs" />
     <None Include=".gitignore" />
     <Compile Include="Forms\DecryptForm.cs">
@@ -192,6 +198,9 @@
     <Compile Include="Msgpack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\LogsForm.resx">
+      <DependentUpon>LogsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Signature.resx">
       <DependentUpon>Signature.cs</DependentUpon>
     </EmbeddedResource>
